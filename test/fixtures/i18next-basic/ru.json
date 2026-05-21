@@ -1,0 +1,5 @@
+{
+  "app.title": "Моё приложение",
+  "login.button.submit": "Войти",
+  "cart.items": "{count, plural, one {# товар} few {# товара} many {# товаров} other {# товара}}"
+}

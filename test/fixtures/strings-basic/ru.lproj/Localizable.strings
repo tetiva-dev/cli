@@ -1,0 +1,5 @@
+/* The application title shown in the header */
+"app.title" = "Моё приложение";
+
+/* Label for the sign-in button */
+"login.button.submit" = "Войти";

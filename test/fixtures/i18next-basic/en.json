@@ -1,0 +1,5 @@
+{
+  "app.title": "My App",
+  "login.button.submit": "Sign in",
+  "cart.items": "{count, plural, one {# item} other {# items}}"
+}

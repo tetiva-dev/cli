@@ -1,0 +1,15 @@
+{
+  "@@locale": "en",
+  "appTitle": "My App",
+  "@appTitle": {
+    "description": "The application title shown in the header"
+  },
+  "cartItems": "{count, plural, one {# item} other {# items}}",
+  "@cartItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
