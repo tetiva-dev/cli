@@ -1,0 +1,15 @@
+{
+  "@@locale": "ru",
+  "appTitle": "Моё приложение",
+  "@appTitle": {
+    "description": "The application title shown in the header"
+  },
+  "cartItems": "{count, plural, one {# товар} few {# товара} many {# товаров} other {# товара}}",
+  "@cartItems": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  }
+}
