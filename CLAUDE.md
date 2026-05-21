@@ -270,4 +270,6 @@ If rollback fails or takes >10 minutes, file a `needs-human` issue. Auto-merge o
 
 ---
 
-_Last updated: 2026-05-20 — initial template under TVA-21 seeding._
+_Last updated: 2026-05-21 — TVA-25: §14 `master` → `main` (5 occurrences) to match actual default branch on `tetiva-dev/cli`._
+
+_Earlier: 2026-05-20 — initial template under TVA-21 seeding._
