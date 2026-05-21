@@ -1,0 +1,13 @@
+# Inverse of .gitignore: publish dist/, README.md, LICENSE; exclude sources and tooling.
+src/
+test/
+tsconfig.json
+vitest.config.ts
+biome.json
+.editorconfig
+.gitignore
+.github/
+*.log
+.env
+.env.*
+.DS_Store

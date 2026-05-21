@@ -1,0 +1,6 @@
+# pnpm 10+ reads build-script approvals from this file. Allow the two
+# toolchain packages that ship a platform binary to run their install
+# scripts; everything else stays build-blocked by pnpm's default.
+allowBuilds:
+  "@biomejs/biome": true
+  esbuild: true

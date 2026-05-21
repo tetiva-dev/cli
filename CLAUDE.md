@@ -1,5 +1,9 @@
 # CLAUDE.md — `cli`
 
+> **Template version.** This file is the seed `CLAUDE.md` for `tetiva-dev/cli`. It is copied into the repo root via TVA-21. Once that lands, the in-repo copy is authoritative.
+
+---
+
 ## 1. Project Purpose
 
 The Tetiva command-line interface. A Node + TypeScript CLI distributed as `@tetiva/cli` on npm. Public OSS, Apache 2.0. Developer-facing surface: `tetiva init`, `tetiva login`, `tetiva push`, `tetiva pull`, `tetiva status`. Reaches the SaaS backend's HTTP API; vendors backend's Zod schemas as shared types (per ADR-0004).
@@ -266,4 +270,4 @@ If rollback fails or takes >10 minutes, file a `needs-human` issue. Auto-merge o
 
 ---
 
-_Last updated: 2026-05-20 — initial seed from `governance/ops/claude-md-templates/cli.CLAUDE.md`._
+_Last updated: 2026-05-20 — initial template under TVA-21 seeding._
