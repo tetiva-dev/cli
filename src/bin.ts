@@ -1,4 +1,7 @@
 #!/usr/bin/env node
-import { run } from "./index.js";
+import { main } from "./cli.js";
 
-run();
+main().catch((error: unknown) => {
+  console.error(error instanceof Error ? error.message : error);
+  process.exitCode = 1;
+});
