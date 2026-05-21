@@ -1,0 +1,2 @@
+{"ts":"2026-05-21T19:06:00Z","task_id":"TVA-22","phase":"implement","model":"claude-opus-4-7","input_tokens":410000,"output_tokens":42000,"estimated_cost_usd":9.30,"session_id":"980f1f35-a35f-41b6-be75-33b666fbe903"}
+{"ts":"2026-05-21T19:06:00Z","task_id":"TVA-22","phase":"review","model":"claude-opus-4-7","input_tokens":70000,"output_tokens":6500,"estimated_cost_usd":1.54,"session_id":"980f1f35-a35f-41b6-be75-33b666fbe903"}
