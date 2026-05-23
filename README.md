@@ -13,3 +13,15 @@ npm install -g @tetiva/cli
 ## Статус
 
 Status: pre-alpha.
+
+## Local development
+
+The CLI talks to `https://api.tetiva.dev` by default. To point it at a backend
+running on your machine, set `TETIVA_API_URL` before invoking any command:
+
+```sh
+TETIVA_API_URL=http://localhost:3000 tetiva login
+```
+
+The override applies to every backend HTTP call the CLI makes, including the
+browser-redirect target used by `tetiva login`.

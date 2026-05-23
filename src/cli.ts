@@ -11,6 +11,8 @@
 
 import { Command } from "commander";
 import { runInit } from "./commands/init.js";
+import { runLogin } from "./commands/login.js";
+import { runLogout } from "./commands/logout.js";
 import { VERSION } from "./index.js";
 
 export function buildProgram(): Command {
@@ -27,6 +29,21 @@ export function buildProgram(): Command {
     .option("-y, --yes", "Accept detected defaults and overwrite an existing config")
     .action(async (options: { yes?: boolean }) => {
       await runInit({ yes: options.yes ?? false });
+    });
+
+  program
+    .command("login")
+    .description("Sign in to Tetiva via your default browser")
+    .action(async () => {
+      const { credentialsPath } = await runLogin();
+      console.log(`Signed in. Credentials saved to ${credentialsPath}.`);
+    });
+
+  program
+    .command("logout")
+    .description("Sign out and delete the stored credentials file")
+    .action(async () => {
+      await runLogout();
     });
 
   return program;
