@@ -13,6 +13,24 @@ import { z } from "zod";
 
 export const CONFIG_FILENAME = "tetiva.config.json";
 
+/**
+ * Production backend host. Override via `TETIVA_API_URL` for local dev — the
+ * single owner of the default lives here so the override stays one env var and
+ * one constant, not a scatter of literals (per TVA-24 launch prompt).
+ */
+export const DEFAULT_API_URL = "https://api.tetiva.dev";
+
+/**
+ * Resolve the backend base URL. `TETIVA_API_URL` wins when set and non-empty;
+ * otherwise the production default. Trailing slashes are trimmed so callers can
+ * compose paths with a leading `/` without producing a double-slash.
+ */
+export function resolveApiUrl(env: NodeJS.ProcessEnv = process.env): string {
+  const override = env.TETIVA_API_URL?.trim();
+  const url = override && override.length > 0 ? override : DEFAULT_API_URL;
+  return url.replace(/\/+$/, "");
+}
+
 /** Supported file-format identifiers — same set as the format detectors. */
 export const FORMAT_IDS = ["i18next", "arb", "strings", "android", "properties"] as const;
 
