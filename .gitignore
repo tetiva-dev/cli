@@ -4,3 +4,8 @@ dist/
 .env.*
 *.log
 .DS_Store
+
+# Autonomous loop scratch directory (see governance/ops/autonomous-loop-localization.md)
+# Ledger file is the exception: tracked as the shared LLM-spend record.
+.orchestration/*
+!.orchestration/llm-spend.jsonl
